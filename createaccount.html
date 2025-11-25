@@ -38,17 +38,24 @@
             position: absolute; left: 880px;top: 0px;
         }
         .form{
-            width: 340px;
-            height: 190px;
+            width: 370px;
+            height: 240px;
             border-radius: 20px;
             position: absolute; left: 485px; top: 230px;
-            padding: 50px 20px 20px 40px;
+            padding:20px 0px 0px 30px;
             box-sizing: border-box;
             overflow: hidden;
             backdrop-filter: blur(16px);
         }
         h6{
             margin: 3px;
+        }
+        input{
+            margin: 1.7px;
+        }
+        
+        img{
+            position: absolute; left: 590px; top: 40px;
         }
         input.submit{
             position: relative;left: 95px;
@@ -57,11 +64,9 @@
             border-radius: 40px;
             
         }
-        img{
-            position: absolute; left: 590px; top: 40px;
-        }
-        a{
-            display: inline-block;
+        h3{
+            margin: 2px;
+            color: rgb(111, 3, 128);
         }
     </style>
 </head>
@@ -70,15 +75,37 @@
     <div class="img2"></div>
     <div class="img3"></div>
     <div class="form">
-        
-        <form action="esassehife.html">
+        <form action="succes.html">
+            <h3>Create New Account</h3>
+            <label for="email">Email:</label>
+            <input type="email" required  name="" id="">
+            <br>
             <label for="us">Username:</label>
-            <input id="us" required  type="text">
+            <input type="text" name="" id="us">
+            <br>
             <label for="pw">Password:</label>
-            <input type="password" required name="" id="pw">
-            <a class="" href="forgetpasword.html"><h6>Foreget password?</h6></a>
-            <a class="" href="createaccount.html"><h6>Create new account!</h6></a>
-            <br><br><br>
+            <input type="password" name="" id="pw">
+            <br>
+            <label for="cpw">Confirm Password:</label>
+            <input type="password" name="" id="cpw" >
+            <br>
+            <label for="phn">Phone Number:</label>
+            <select name="" id="">
+                <option value="">+1</option>
+                <option value="">+10</option>
+                <option value="">+7</option>
+                <option value="">+41</option>
+                <option value="">+156</option>
+                <option value="">+994</option>
+            </select>
+            <input type="tel" name="" id="">
+
+
+
+
+
+            
+            <br>
             <input type="submit" class="submit" >
 
         </form>
