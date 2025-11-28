@@ -1,84 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup</title>
     <style>
-        html, body{
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
-        .img1{
+        html,
+        body {
+         width: 100%;   
+         height: 100%;
+        overflow-x: hidden;
+        }
+            
+
+        .img1 {
             background-position: center;
             background-size: cover;
             background-image: url(images/lilac-flower-320874_1920.jpg);
-            width: 430px;
-            height: 630px;
-            
+            width: 30%;
+            height: 100vh;
+
 
         }
-        .img2{
+
+        .img2 {
             background-image: url(images/verbena-7504222_1920.jpg);
-            width: 470px;
-            height: 630px;
+            width: 40%;
+            height: 100vh;
             background-position: center;
             background-size: cover;
-            position: absolute;left: 410px;top: 0px;
+        }
 
-        }
-        .img3{
+        .img3 {
             background-image: url(images/tulip-bouquet-1715054_1920.jpg);
-            width: 400px;
-            height: 630px;
+            width: 30%;
+            height: 100vh;
             background-position: center;
             background-size: cover;
-            position: absolute; left: 880px;top: 0px;
         }
-        .form{
+
+        .form {
             width: 370px;
             height: 240px;
             border-radius: 20px;
-            position: absolute; left: 485px; top: 230px;
-            padding:20px 0px 0px 30px;
+            position: absolute;
+            left: 50%;top: 50%;
+            padding: 20px 0px 0px 30px;
             box-sizing: border-box;
             overflow: hidden;
+            transform: translate(-50%, -50%);
             backdrop-filter: blur(16px);
         }
-        h6{
+
+        h6 {
             margin: 3px;
         }
-        input{
+
+        input {
             margin: 1.7px;
         }
-        
-        img{
-            position: absolute; left: 590px; top: 40px;
+
+        img {
+            position: absolute;
+            left: 44.5%;
+            top: 0;
+            width: 12%;
         }
-        input.submit{
-            position: relative;left: 95px;
+
+        input.submit {
+            position: relative;
+            left: 39%;
+            top: 50%;
+            width: 60px;
+            height: 23px;
             background-color: rgb(88, 200, 88);
-            border: 1px solid ;
-            border-radius: 40px;
-            
+            border: 1px solid;
+            border-radius: 4px;
+
         }
-        h3{
+
+        h3 {
             margin: 2px;
             color: rgb(111, 3, 128);
         }
+        .container{
+            display: flex;
+           
+        }
     </style>
 </head>
+
 <body>
-    <div class="img1"></div>
-    <div class="img2"></div>
-    <div class="img3"></div>
+    <div class="container">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+    </div>
+
     <div class="form">
         <form action="succes.html">
             <h3>Create New Account</h3>
             <label for="email">Email:</label>
-            <input type="email" required  name="" id="">
+            <input type="email" required name="" id="">
             <br>
             <label for="us">Username:</label>
             <input type="text" name="" id="us">
@@ -87,7 +117,7 @@
             <input type="password" name="" id="pw">
             <br>
             <label for="cpw">Confirm Password:</label>
-            <input type="password" name="" id="cpw" >
+            <input type="password" name="" id="cpw">
             <br>
             <label for="phn">Phone Number:</label>
             <select name="" id="">
@@ -104,14 +134,15 @@
 
 
 
-            
+
             <br>
-            <input type="submit" class="submit" >
+            <input type="submit" class="submit">
 
         </form>
-        
+
     </div>
-    <img src="images/Florify Studios.png" width="150px" alt="">
-    
+    <img src="images/Florify Studios.png" width="123px" alt="">
+
 </body>
+
 </html>
