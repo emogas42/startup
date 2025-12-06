@@ -181,25 +181,18 @@
 
         .logo {
             width: 120px;
+            cursor: pointer;
             height: 120px;
             background-image: url(guller/floweraz.jpg);
             background-position: center;
             background-size: cover;
-            border: solid 1px
-            ;
+            border: solid 1px;
             display: inline-block;
 
         }
-        .insta{
-            background-image: url(images/—Pngtree—instagram\ icon\ vector_8704817.png);
-            position: relative;
-            left: 50px;
-            display: inline-block;
-            
 
-        }
-    
-        .register{
+
+        .register {
             background-image: url(images/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
             width: 24px;
             height: 24px;
@@ -207,17 +200,32 @@
             margin: 0;
             padding: 0;
         }
-        #insta{
-            position:relative;top:-50px;;
-        }
-        .tel{
+
+        .tel {
             background-image: url(images/—Pngtree—telephone\ vector\ icon\ and\ logo_23113505.png);
-            width: 100px;
-            height: 100px;
+            width: 60px;
+            background-position: center;
+            background-size: cover;
+            
+            height: 60px;
+        }
+
+        .insta {
+            display: flex;
+            
+        }
+
+        .teldiv {
+            display: flex;
+        }
+        .instavetel{
+            
+            margin: 0;
+            display: inline-block;
         }
     </style>
 </head>
-        
+
 
 <body>
     <div class="gradient">
@@ -225,8 +233,10 @@
             <h1> <img src="images/Florify Studios.png" width="40px" style="margin-right: 10px ;" alt="">Florify
             </h1>
             <ul>
-                <li><a href="signin.html"><div class="register" id="register"></div></a></li>
-            <li><a style="margin: 0;" class="sign" href="signin.html">log in/ sign in</a></li>
+                <li><a href="signin.html">
+                        <div class="register" id="register"></div>
+                    </a></li>
+                <li><a style="margin: 0;" class="sign" href="signin.html">log in/ sign in</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shops.html">Shops</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
@@ -296,17 +306,27 @@
             Bütün çiçəklər günlük təzə gətirilir və mövsümə görə tonu və ölçüsü cüzi fərqlənə bilər. Dizayn ümumi üsluba
             tam uyğun saxlanılır. <br>
         </h4>
-        
+
         <div class="logo"></div>
-        <div class="insta"><img src="images/—Pngtree—instagram icon vector_8704817.png" width="40" alt=""></div>
-        
-        <a href="" id="insta" style="margin: 0%;"><h5 >_flower.az_</h5></a>
-        <div class="tel"></div>
+        <div class="instavetel">
+            <div class="insta"><img src="images/—Pngtree—instagram icon vector_8704817.png" width="40" alt=""
+                    height="40"><a href="" id="instaname">
+                    <p class="instaname">_flower.az_</p>
+                </a></div>
+
+
+            <div class="teldiv">
+                <div class="tel"></div>
+                <p style="">0705051080</p>
+            </div>
+        </div>
+
+
 
 
     </div>
-    
-    <div  class="s img2"></div>
+
+    <div class="s img2"></div>
 
 
 </body>
