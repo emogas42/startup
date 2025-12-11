@@ -30,82 +30,188 @@
         body {
             height: 100%;
             width: 100%;
-            overflow-x: hidden;
-        }
-
-        .img1 {
-            background-position: center;
-            background-size: cover;
-            background-image: url(images/lilac-flower-320874_1920.jpg);
-            width: 30%;
-            height: 100vh;
-
-
-
-        }
-
-        .img2 {
-            background-image: url(images/verbena-7504222_1920.jpg);
-            width: 40%;
-            height: 100vh;
-            background-position: center;
-            background-size: cover;
-
 
         }
 
 
-        .img3 {
-            background-image: url(images/tulip-bouquet-1715054_1920.jpg);
-            width: 30%;
-            height: 100vh;
-            background-position: center;
-            background-size: cover;
 
-        }
 
-        .form {
-            width: 340px;
-            height: 190px;
-            border-radius: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 50px 20px 20px 40px;
-            box-sizing: border-box;
 
-            backdrop-filter: blur(5px);
-        }
-
-        h6 {
-            margin: 3px;
-        }
-
-        input.submit {
+        body {
+            width: 100%;
+            height: 100%;
             position: relative;
-            left: 39%;
-            background-color: rgb(88, 200, 88);
-            border: 1px solid;
-            border-radius: 4px;
-            width: 60px;
-            height: 23px;
-            
+            background-size: contain;
+
+            background: linear-gradient(to bottom, ghostwhite, rgb(119, 143, 214));
+
+            background-attachment: fixed;
+
 
         }
 
-        img {
-            position: absolute;left: 44%;top: 0.51%;
-            width: 14%;
-            border-radius: 50%;
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17px 50px;
+            width: 100%;
+            height: 15%;
+            background-color: thistle;
+
+
+        }
+
+
+        .nav h1 {
+            font-size: 35px;
+            font-weight: 00;
+            position: relative;
+            letter-spacing: 2px;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .nav ul {
+            display: flex;
+        }
+
+        .nav ul li {
+
+            list-style-type: none;
+            text-shadow: rgb(0, 0, 0) 1px 1px 7px;
+            transition: 0.5s ease;
+
+
+        }
+
+        .nav ul li:hover {
+            text-shadow: white 1px 1px 7px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 5px 20px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            color: lavender;
+            transition: color 0.37s ease;
+
+
+
+
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+            color: indigo;
+        }
+
+        ul li #sub {
+            background-image: linear-gradient(90deg, tomato, firebrick, indigo);
+            padding: 10px;
+            ;
+            border-radius: 16px;
+            text-align: center;
+            background-size: 250% auto;
+            text-shadow: none;
+            transition: 0.45s;
+            color: aliceblue;
+
+
+        }
+
+        ul li #sub:hover {
+            background-position: right center;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .magazalar {
+            display: flex;
+
+        }
+
+        .magaza {
+            margin: 70px;
+            width: 33%;
+            height: 220px;
+            background-color: rgb(255, 255, 255);
+            margin: 7px;
+            transition: 0.5s;
+            border-radius: 13px;
+
+
+        }
+
+
+
+        .hortenziya {
+            background-image: url(guller/Pastel\ rənglərin\ ən\ yumşaq\ ahəngi…\ 💐✨Bənövşəyi\,\ şaftalı\ və\ açıq\ çəhrayı\ çiçəklərin\ birləşməsi\ i.jpg);
+            background-position: 50% 30%;
+
+
+        }
+
+        .qizilgul {
+
+            background-image: url(guller/qzlgulPP.png);
+            background-position: 50% 0%;
+
+
+
+
+        }
+
+        button {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            left: 50%;
+            margin-bottom: 10px;
         }
 
         a {
+            text-decoration: none;
+            color: rgb(36, 33, 29);
+        }
+
+        .register {
+            background-image: url(images/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
+            width: 24px;
+            height: 24px;
             display: inline-block;
+            margin: 0;
+            padding: 0;
+
         }
-        .container{
-            display: flex;
+
+        .s {
+            border-radius: 13px;
+            width: 100%;
+            height: 170px;
+            
+            background-size: cover;
         }
+        .watsapp{
+            background-image: url(images/whatsapp.png);
+            width: 80px;
+            height: 80px;
+            background-position: center;
+            background-size: cover;
+            transition: 0.3s;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            z-index: 5;
+        }
+        
+    .watsapp:hover{
+        width: 90px;
+        height: 90px;
+    }    
     </style>
 </head>
 
@@ -116,26 +222,80 @@
         <div class="img3"></div>
     </div>
 
-    <div class="form">
 
-        <form action="home.html">
-            <label for="us">Username:</label>
-            <input id="us" required type="text">
-            <label for="pw">Password:</label>
-            <input type="password" required name="" id="pw">
-            <a class="" href="forgetpasword.html">
-                <h6>Forget password?</h6>
+
+    <h1>Home</h1>
+
+
+
+
+    <div class="magazalar">
+        <div class="magaza ">
+            <a href="qizilgul.html">
+
+                <div class="qizilgul s"></div>
+            </a>
+
+            <a href="qizilgul.html">
+
+                <h4>Qızılgül Boutique<h4>
+            </a>
+        </div>
+
+
+
+
+        <div class="magaza">
+            <a href="hortenziya.html">
+                <div class="hortenziya s"></div>
             </a>
             <a class="" href="createaccount.html">
                 <h6>Create new account!</h6>
             </a>
-            <br><br>
-            <input type="submit" class="submit">
 
-        </form>
+        </div>
 
+
+        <div class="magaza">
+            <div class="magaza5 s"></div>
+        </div>
     </div>
-    <img src="images/Florify Studios.png"  alt="">
+    <div class="magazalar">
+        <div class="magaza">
+            <div class="magaza5 s"></div>
+        </div>
+        <div class="magaza">
+            <div class="magaza5 s"></div>
+        </div>
+        <div class="magaza">
+            <div class="magaza5"></div>
+        </div>
+    </div>
+    <div class="magazalar">
+        <div class="magaza">
+            <div class="magaza5"></div>
+        </div>
+        <div class="magaza">
+            <div class="magaza5"></div>
+        </div>
+        <div class="magaza">
+            <div class="magaza5"></div>
+        </div>
+    </div>
+    <a href="https://wa.me/+994775051080"> <div class="watsapp"></div></a>
+    <a href="index.html"><button>1</button></a>
+    <a href="home2.html"><button>2</button> </a>
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
