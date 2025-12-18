@@ -37,14 +37,14 @@
 
 
 
-        body{
+        body {
             width: 100%;
             height: 100%;
             position: relative;
             background-size: contain;
-            
-            background: linear-gradient(to bottom ,ghostwhite, rgb(119, 143, 214)) ;
-            
+
+            background: linear-gradient(270deg, plum, mediumpurple);
+
             background-attachment: fixed;
 
 
@@ -57,7 +57,7 @@
             padding: 17px 50px;
             width: 100%;
             height: 15%;
-            background-color: thistle;
+            background-color: darkslateblue;
 
 
         }
@@ -135,39 +135,57 @@
         }
 
         .magaza {
-            margin: 70px;
-            width: 33%;
-            height: 220px;
-            background-color: rgb(255, 255, 255);
-            margin: 7px;
+
+            width: 32%;
+            height: 270px;
+            background-color: lavender;
+
             transition: 0.5s;
             border-radius: 13px;
+            margin: 1% 2%;
+            background: lavender;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.5s;
 
+
+        }
+        .magaza:hover{
+            scale: 1.05;
+            box-shadow: 0px 0px 12px;
+        }
+
+        .s {
+            border-radius: 13px;
+            width: 100%;
+            height: 225px;
+            
+
+            background-size: cover;
         }
 
 
+        .sebet {
 
-        .sebet{
-            border-radius: 13px;
             background-image: url(guller/sebet1.png);
-            width: 100%;
-            height: 170px;
+
             background-position: 50% 30%;
-            background-size: cover;
+
 
 
         }
-        .gelinbk{
-            border-radius: 13px;
+
+        .gelinbk {
+
             background-image: url(guller/lilya.png);
-            width: 100%;
-            height: 170px;
-            background-position: 50% 30%;
-            background-size: cover;
+
+            background-position: 50% 45%;
+
+
 
 
         }
-        
+
 
         button {
             width: 30px;
@@ -182,102 +200,112 @@
             text-decoration: none;
             color: rgb(36, 33, 29);
         }
-        .register{
+
+        .register {
             background-image: url(images/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
             width: 24px;
             height: 24px;
             display: inline-block;
             margin: 0;
             padding: 0;
-            
+
         }
-        .sign{
-            
-        }
-        .watsapp{
+
+        .sign {}
+
+        .watsapp {
             background-image: url(images/whatsapp.png);
             width: 80px;
             height: 80px;
             background-position: center;
-            background-size: cover;
+
+
             transition: 0.3s;
             position: fixed;
             right: 10px;
             bottom: 10px;
             z-index: 5;
         }
-        
-    .watsapp:hover{
-        width: 90px;
-        height: 90px;
-    }
-    .harmoniya{
-            border-radius: 13px;
+
+        .watsapp:hover {
+            width: 90px;
+            height: 90px;
+        }
+
+        .harmoniya {
+
             background-image: url(guller/buket0022.png);
-            width: 100%;
-            height: 170px;
-            background-position: 50% 30%;
-            background-size: cover;
+
+            background-position: 50% 40%;
+
+
 
 
         }
-        .gerber{
-            border-radius: 13px;
+
+        .gerber {
+
             background-image: url(guller/yeni1.1.png);
-            width: 100%;
-            height: 170px;
+
             background-position: 50% 50%;
-            background-size: cover;
+
+
 
 
         }
-        .qirmizi{
-            border-radius: 13px;
+
+        .qirmizi {
+
             background-image: url(guller/yeni2.1.png);
-            width: 100%;
-            height: 170px;
+
             background-position: 50% 50%;
-            background-size: cover;
+
+
 
 
         }
-        .sweet{
-            border-radius: 13px;
+
+        .sweet {
+
             background-image: url(guller/yeni3.1.png);
-            width: 100%;
-            height: 170px;
+
             background-position: 50% 50%;
-            background-size: cover;
+
+
 
 
         }
-        .zerif{
-            border-radius: 13px;
+
+        .zerif {
+
             background-image: url(guller/zerifbuket1.png);
-            width: 100%;
-            height: 170px;
-            background-position: 50% 50%;
+
+            background-position: 50% 90%;
             background-size: cover;
 
 
+
+
         }
-        .garden{
-            border-radius: 13px;
+
+        .garden {
+
             background-image: url(guller/gardengulpp1.png);
-            width: 100%;
-            height: 170px;
-            background-position: 50% 50%;
-            background-size: cover;
+
+            background-position: 50% 30%;
+
+
 
 
         }
-        .elegance{
-            border-radius: 13px;
+
+        .elegance {
+
             background-image: url(guller/elegance1.png);
-            width: 100%;
-            height: 170px;
-            background-position: 50% 50%;
-            background-size: cover;
+
+            background-position: 50% 55%;
+
+
 
 
         }
@@ -286,14 +314,16 @@
 
 <body>
 
-    
-    
-    
+
+
+
     <div class="nav">
         <h1> <img src="images/Florify Studios.png" width="40px" style="margin-right: 10px ;" alt="">Florify
         </h1>
         <ul>
-            <li><a href="signin.html"><div class="register" id="register"></div></a></li>
+            <li><a href="signin.html">
+                    <div class="register" id="register"></div>
+                </a></li>
             <li><a style="margin: 0;" class="sign" href="signin.html">log in/ sign in</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="shops.html">Shops</a></li>
@@ -302,86 +332,110 @@
             <li><a href="subscribe.html" id="sub">Subscribe</a></li>
         </ul>
     </div>
-    
-    
-    
+
+
+
     <h1>Home</h1>
-    
-    
-    
-    
+
+
+
+
     <div class="magazalar">
         <div class="magaza">
-            <a href="sebet.html"><div class="sebet">
-                
-            </div></a>
-            
-            <h4>Hortenziya & Xrizantema Qarışıq Buketi<h4>
-            </div>
-            <div class="magaza">
-                <a href="hortenziya.html">
-                    <div class="gelinbk"></div>
-                </a>
-                <a href="hortenziya.html">
-                    <h4>Hortenziya & Xrizantema Qarışıq Buketi</h4>
-                </a>
-                
-            </div>
-            <div class="magaza">
-                <a href="harmoniya.html">
-                    <div class="harmoniya"></div>
+            <a href="sebet.html">
+                <div class="sebet s"></div>
+            </a>
 
-                </a>
-                <a href="harmoniya.html">
-                    <h4>Qış Harmoni̇yası”-Premium Yeni İl Buketi</h4>
-                </a>
-            </div>
+            <a href="sebet.html">
+                <h4>Roza Kompazisiyasi<h4></h4>
+            </a>
         </div>
-        <div class="magazalar">
-            <div class="magaza">
-                <a href="gerber.html"><div class="gerber"></div></a>
-                <a href="gerber.html"><h4> Roza yeni il buketi</h4></a>
-                
-            </div>
-            <div class="magaza">
-                <a href="qirmizi.html"><div class="qirmizi"></div></a>
-                <a href="qirmizi.html"><h4>qeyri adi üslublu
+        <div class="magaza">
+            <a href="hortenziya.html">
+                <div class="gelinbk s"></div>
+            </a>
+            <a href="hortenziya.html">
+                <h4>Hortenziya & Xrizantema Qarışıq Buketi</h4>
+            </a>
+
+        </div>
+        <div class="magaza">
+            <a href="harmoniya.html">
+                <div class="harmoniya s"></div>
+
+            </a>
+            <a href="harmoniya.html">
+                <h4>Qış Harmoni̇yası”-Premium Yeni İl Buketi</h4>
+            </a>
+        </div>
+    </div>
+    <div class="magazalar">
+        <div class="magaza">
+            <a href="gerber.html">
+                <div class="gerber s"></div>
+            </a>
+            <a href="gerber.html">
+                <h4> Roza yeni il buketi</h4>
+            </a>
+
+        </div>
+        <div class="magaza">
+            <a href="qirmizi.html">
+                <div class="qirmizi s"></div>
+            </a>
+            <a href="qirmizi.html">
+                <h4>qeyri adi üslublu
                     kompozisiya
-                </h4></a>
-                
-            </div>
-            <div class="magaza">
-                <a href="sweet.html"><div class="sweet"></div></a>
-                <a href="sweet.html"><div><h4>dekorativ cicek kompozisiyası</h4></div></a>
-                
-            </div>
+                </h4>
+            </a>
+
         </div>
-        <div class="magazalar">
-            <div class="magaza">
-                <a href="zerif.html"><div class="zerif"></div></a>
-                
-            </div>
-            <div class="magaza">
-                <a href="elegance.html"><div class="elegance"></div></a>
-                
-            </div>
-            <div class="magaza">
-                <a href="gardengul.html"><div class="garden"></div></a>
-                
-            </div>
+        <div class="magaza">
+            <a href="sweet.html">
+                <div class="sweet s"></div>
+            </a>
+            <a href="sweet.html">
+                <div>
+                    <h4>dekorativ cicek kompozisiyası</h4>
+                </div>
+            </a>
+
         </div>
-       <a href="https://wa.me/+994775051080"> <div class="watsapp"></div></a>
-        <a href="index.html"><button>1</button></a>
-        <a href="home2.html"><button>2</button> </a>
-        
+    </div>
+    <div class="magazalar">
+        <div class="magaza">
+            <a href="zerif.html">
+                <div class="zerif s"></div>
+            </a>
+
+        </div>
+        <div class="magaza">
+            <a href="elegance.html">
+                <div class="elegance s"></div>
+            </a>
+
+        </div>
+        <div class="magaza">
+            <a href="gardengul.html">
+                <div class="garden s"></div>
+            </a>
+
+        </div>
+    </div>
+    <a href="https://wa.me/+994775051080">
+        <div class="watsapp s"></div>
+    </a>
+    <a href="index.html"><button>1</button></a>
+    <a href="home2.html"><button>2</button> </a>
 
 
 
-        
-        
-        
-        
-        
+
+
+
+
+
+
 
 
 
