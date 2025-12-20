@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Florify.az</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
 
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: weight;
-            font-style: normal;
 
+
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
 
 
 
@@ -43,7 +42,7 @@
             position: relative;
             background-size: contain;
 
-            background: linear-gradient(to bottom, ghostwhite, rgb(119, 143, 214));
+            background: linear-gradient(to bottom, ghostwhite, skyblue);
 
             background-attachment: fixed;
 
@@ -136,22 +135,23 @@
         }
 
         .magaza {
-            
+
             width: 32%;
             height: 270px;
             background-color: lavender;
 
             transition: 0.5s;
-            border-radius: 13px;
             margin: 1% 2%;
             background: lavender;
             border-radius: 16px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             transition: 0.5s;
+            overflow: hidden;
 
 
         }
-        .magaza:hover{
+
+        .magaza:hover {
             scale: 1.05;
             box-shadow: 0px 0px 12px;
         }
@@ -218,7 +218,7 @@
         }
 
 
-         .laletuplin {
+        .laletuplin {
 
             background-image: url(guller/lalepp.png);
             background-position: 50% 0%;
@@ -256,7 +256,6 @@
         }
 
         .s {
-            border-radius: 13px;
             width: 100%;
             height: 225px;
 
@@ -289,6 +288,37 @@
             width: 90px;
             height: 90px;
         }
+        .endirimli{
+            color: red;
+            display: inline-block;
+            margin-left: 25px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        .qiymet{
+            color: grey;
+            display: inline-block;
+            text-decoration:line-through;
+            margin-left: 19px;
+            font-weight: bolder;
+            font-size: 20px;
+            
+        }
+        p.flowername{
+            font-weight: 900;
+            margin-left: 10px;
+        }
+        p.magazaadi{
+            margin-left: 10px;
+            display: inline-block;
+        }
+        h1.home{
+            text-align: center;
+            color: darkmagenta;
+            font-weight: 900
+            ;
+                
+        }
     </style>
 </head>
 
@@ -313,7 +343,7 @@
 
 
 
-    <h1>Home</h1>
+    <h1 class="home">Home Page</h1>
 
 
 
@@ -327,7 +357,11 @@
 
             <a href="qizilgul.html">
 
-                <h4>Qızılgül Boutique<h4>
+                <p class="flowername">Qızılgül Boutique<p>
+                    <p class="magazaadi">Flower.az</p>
+                    <p class="endirimli">200</p>
+                    <p class="qiymet">320</p>
+
             </a>
         </div>
 
@@ -341,10 +375,13 @@
                 <div class="hortenziya s"></div>
             </a>
             <a href="hortenziya.html">
-                <h4>Hortenziya & Xrizantema Qarışıq Buketi </h4>
-                <p>
-                    Flower.az 60$sdad
-                </p>
+                <p class="flowername">Hortenziya & Xrizantema Qarışıq Buketi </p>
+                <p class="magazaadi">Flower.az</p>
+                    <p class="endirimli">200</p>
+                    <p class="qiymet">320</p>
+               
+                
+
 
             </a>
 
@@ -358,7 +395,10 @@
             </a>
 
             <a href="buket002.html">
-                <h4>Buket 002-Qızılgül & Qortenziya & Orxideya</h4>
+                <p class="flowername">Buket 002-Qızılgül & Qortenziya & Orxideya</p>
+                <p class="magazaadi">Flower.az</p>
+                    <p class="endirimli">200</p>
+                    <p class="qiymet">320</p>
             </a>
         </div>
 
@@ -370,11 +410,14 @@
 
         <div class="magaza">
             <a href="laletuplin.html">
-                
+
                 <div class="laletuplin s"></div>
             </a>
             <a href="laletuplin.html">
-                <h4>Lale buketi</h4>
+                <p class="flowername">Lale buketi</p>
+                <p class="magazaadi">Flower.az</p>
+                    <p class="endirimli">200</p>
+                    <p class="qiymet">320</p>
             </a>
         </div>
 
@@ -385,7 +428,10 @@
                 <div class="gardengul s"></div>
             </a>
             <a href="gardengul.html">
-                <h4>Garden Gül Buketi</h4>
+                <p class="flowername">Garden Gül Buketi</p>
+                <p class="magazaadi">Flower.az</p>
+                    <p class="endirimli">200</p>
+                    <p class="qiymet">320</p>
             </a>
         </div>
 
@@ -395,7 +441,10 @@
                 <div class="roza007 s"></div>
             </a>
             <a href="roza007.html">
-                <h4>Çəhrayı 11 ədəd roza</h4>
+                <p class="flowername">Çəhrayı 11 ədəd roza</p>
+                <p class="magazaadi">Flower.az</p>
+                    <p class="endirimli">200</p>
+                    <p class="qiymet">320</p>
             </a>
         </div>
     </div>
@@ -411,7 +460,10 @@
 
             </a>
             <a href="gerbera.html">
-                <h4>Gerbera Buketi</h4>
+                <p class="flowername">Gerbera Buketi</p>
+                <p class="magazaadi">Flower.az</p>
+                    <p class="endirimli">200</p>
+                    <p class="qiymet">320</p>
             </a>
         </div>
 
@@ -423,7 +475,10 @@
                 <div class="papatya001 s"></div>
             </a>
             <a href="papatya001.html">
-                <h4>Papatya Buketi</h4>
+                <p class="flowername">Papatya Buketi</p>
+                <p class="magazaadi">Flower.az</p>
+                    <p class="endirimli">200</p>
+                    <p class="qiymet">320</p>
             </a>
 
         </div>
@@ -436,7 +491,10 @@
                 <div class="pionflowers s"></div>
             </a>
             <a href="pionflowers.html">
-                <h4>Pion Flowers</h4>
+                <p class="flowername">Pion Flowers</p>
+                <p class="magazaadi">Flower.az</p>
+                    <p class="endirimli">200</p>
+                    <p class="qiymet">320</p>
             </a>
         </div>
 

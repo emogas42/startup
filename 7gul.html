@@ -203,12 +203,12 @@
         }
 
         .logo {
-            background-image: url(guller/flowerazlogo.png);
+            background-image: url(guller/7gul.png);
             height: 300px;
             width: 22%;
             border: solid 2px;
             background-position: center;
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
 
             margin: 20px 40px;
@@ -273,21 +273,10 @@
             z-index: 4;
             animation: box2 1.5s;
             outline: solid 2px;
+            
 
 
-        }
 
-        .box3 {
-
-            margin: 10px;
-            width: 27%;
-            height: 45vh;
-            background-color: rgba(230, 230, 250, 0.477);
-            background-image: linear-gradient(90deg pink, indigo);
-            border-radius: 16px;
-            z-index: 4;
-            animation: box2 1.5s;
-            outline: solid 2px;
         }
 
         @keyframes box2 {
@@ -301,12 +290,23 @@
                 opacity: 1;
             }
         }
+           .box3 {
+
+            margin: 10px;
+            width: 27%;
+            height: 45vh;
+            background-color: rgba(230, 230, 250, 0.477);
+            background-image: linear-gradient(90deg pink, indigo);
+            border-radius: 16px;
+            z-index: 4;
+            animation: box2 1.5s;
+            outline: solid 2px;
+        }
 
 
         p.workhour {
             line-height: 33px;
             text-align: center;
-            font-weight: 500;
             animation: workhour 1.5s;
         }
 
@@ -330,9 +330,9 @@
             height: 40px;
             background-size: cover;
             background-position: center;
+              position: relative;
+            top: 20px;
             margin-left: 20px;
-            position: relative;
-            top: 30px;
         }
 
         .magazalar {
@@ -363,17 +363,18 @@
         p.locatiop {
             display: inline-block;
             position: relative;
-            top: -15px;
-            position: relative;
-            top: 30px;
+            top: -15px;  position: relative;
+            top: 20px;
 
         }
 
         .insta {
             margin-top: 15px;
             display: flex;
+            margin-left: 20px;
             position: relative;
-            top: 30px;
+            top: 20px;
+
         }
 
         .teldiv {
@@ -395,8 +396,6 @@
             width: 40px;
             background-position: center;
             background-size: cover;
-            margin-left: 20px;
-
 
             height: 40px;
         }
@@ -425,6 +424,26 @@
             height: 225px;
 
             background-size: cover;
+        }
+         .gerber {
+
+            background-image: url(guller/yeni1.1.png);
+
+            background-position: 50% 50%;
+
+
+
+
+        }
+         .qirmizi {
+
+            background-image: url(guller/yeni2.1.png);
+
+            background-position: 50% 50%;
+
+
+
+
         }
 
         .endirimli {
@@ -460,17 +479,17 @@
             color: black;
         }
 
-        .sebet {
+     .sweet {
 
-            background-image: url(guller/sebet1.png);
+            background-image: url(guller/yeni3.1.png);
 
-            background-position: 50% 30%;
+            background-position: 50% 50%;
+
 
 
 
         }
-
-        p.niye {
+            p.niye {
             font-size: 20px;
             font-weight: 800;
             text-align: center;
@@ -510,7 +529,7 @@
     <div class="setir1">
         <div class="logo"></div>
         <div class="box">
-            <h2 style="text-align: center; margin-bottom: 20px; font-weight: 800;">Work Hours</h2>
+            <h2 style="text-align: center; margin-bottom: 20px;">Work Hours</h2>
             <p class="workhour">
                 Monday:
                 10:00–24:00 <br>
@@ -539,13 +558,20 @@
 
                 📞 Sifariş və məlumat üçün əlaqə saxlayın
             </P>
+            <!-- <div class="location"><div class="locatio"></div>
+            <p class="locatiop">Azərbaycan, Bakı. Mikayıl Müşfiq küçəsi 14</p></div> -->
 
-
-
+            <!-- <div class="insta">
+                <div class="instalogo"></div>
+                <a href="https://www.instagram.com/_flower.az_/?hl=en">
+                    <p style="position: relative; top:  15px; margin-left: 10px;">_flower.az_</p>
+                </a>
+            </div> -->
             <div class="teldiv">
                 <div class="tel"></div>
                 <p style="position: relative; top:  15px; margin-left: 10px;">+994554440010</p>
             </div>
+             
 
         </div>
         <div class="box3">
@@ -571,25 +597,32 @@
         </div>
     </div>
     <div class="magazalar">
-        <div class="magaza "><a href="hortenziya.html">
-                <div class="hortenziya s"></div>
-            </a> <a href="hortenziya.html">
+        <div class="magaza "><a href="gerber.html">
+                <div class="gerber s"></div>
+            </a> <a href="gerber.html">
                 <p class="flowername">Hortenziya & Xrizantema Qarışıq Buketi </p>
                 <p class="magazaadi">Flower.az</p>
                 <p class="endirimli">200</p>
                 <p class="qiymet">320</p>
             </a></div>
-        <div class="magaza"><a href="sebet.html">
-                <div class="sebet s"></div>
-            </a> </a> <a href="sebet.html">
+        <div class="magaza"><a href="sweet.html">
+                <div class="sweet s"></div>
+            </a>   </a> <a href="sweet.html">
                 <p class="flowername">Hortenziya & Xrizantema Qarışıq Buketi </p>
                 <p class="magazaadi">Flower.az</p>
                 <p class="endirimli">70</p>
                 <p class="qiymet">95</p>
             </a></div>
+            
 
-
-        <div class="magaza"></div>
+        <div class="magaza "><a href="qirmizi.html">
+                <div class="qirmizi s"></div>
+            </a> <a href="qirmizi.html">
+                <p class="flowername">Hortenziya & Xrizantema Qarışıq Buketi </p>
+                <p class="magazaadi">Flower.az</p>
+                <p class="endirimli">200</p>
+                <p class="qiymet">320</p>
+            </a></div>
     </div>
     <div class="magazalar">
         <div class="magaza"></div>
