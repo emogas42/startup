@@ -43,7 +43,7 @@
             position: relative;
             background-size: contain;
 
-            background: linear-gradient( ghostwhite, rgb(119, 143, 214));
+            background: linear-gradient(ghostwhite, rgb(119, 143, 214));
 
             background-attachment: fixed;
 
@@ -135,14 +135,25 @@
         }
 
         .magaza {
-            margin: 70px;
-            width: 33%;
-            height: 220px;
-            background-color: rgb(255, 255, 255);
-            margin: 7px;
+
+            width: 32%;
+            height: 270px;
+            background-color: lavender;
+
             transition: 0.5s;
             border-radius: 13px;
+            margin: 1% 2%;
+            background: lavender;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.5s;
 
+
+        }
+
+        .magaza:hover {
+            scale: 1.05;
+            box-shadow: 0px 0px 12px;
         }
 
 
@@ -231,7 +242,19 @@
             background-image: linear-gradient(90deg pink, indigo);
             border-radius: 16px;
             z-index: 4;
+            animation: box 1.5s;
 
+        }
+         @keyframes box{
+
+              0% {
+                opacity: 0;
+                transform: translatey(-100px);
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
 
         .box2 {
@@ -243,8 +266,20 @@
             background-image: linear-gradient(90deg pink, indigo);
             border-radius: 16px;
             z-index: 4;
+            animation: box2 1.5s ;
 
 
+        }
+        @keyframes box2{
+
+              0% {
+                opacity: 0;
+                transform: translatey(-100px);
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
 
         p {
@@ -255,9 +290,21 @@
         p.workhour {
             line-height: 33px;
             text-align: center;
+            animation: workhour 1.5s;
         }
 
-        .location {
+        @keyframes workhour {
+            0% {
+                opacity: 0;
+                transform: translatey(-100px);
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .locatio {
             display: inline-block;
             margin-top: 10px;
             background-image: url(images/Amitjakhu-Drip-Location.512.png);
@@ -267,17 +314,18 @@
             background-size: cover;
             background-position: center;
         }
-         .magazalar {
+
+        .magazalar {
             display: flex;
 
         }
 
         .magaza {
-            
+
             width: 32%;
             height: 270px;
             background-color: rgb(255, 255, 255);
-            
+
             transition: 0.5s;
             border-radius: 13px;
             margin: 1% 2%;
@@ -285,43 +333,56 @@
 
         }
 
-        p.locatio {
+        p.locatiop {
             display: inline-block;
             position: relative;
             top: -15px;
 
         }
-         .insta {
+
+        .insta {
             margin-top: 15px;
             display: flex;
-            
+
         }
 
         .teldiv {
             display: flex;
             margin-top: 15px;
-        }   
+        }
+
         .tel {
             background-image: url(images/—Pngtree—telephone\ vector\ icon\ and\ logo_23113505.png);
             width: 45px;
             background-position: center;
             background-size: cover;
-            
+
             height: 45px;
         }
-        .instalogo{
-             background-image: url(images/—Pngtree—instagram\ icon\ vector_8704817.png);
-            width: 45px;
+
+        .instalogo {
+            background-image: url(images/—Pngtree—instagram\ icon\ vector_8704817.png);
+            width: 40px;
             background-position: center;
             background-size: cover;
-            
-            height: 45px;
+
+            height: 40px;
         }
-        a{
+
+        a {
             text-decoration: underline;
             color: blueviolet;
         }
 
+        .money {
+            width: 30px;
+            height: 30px;
+            background-image: url(images/Custom-Icon-Design-Flatastic-4-US-dollar.512.png);
+            background-size: cover;
+            background-position: center;
+            display: inline-block;
+
+        }
     </style>
 </head>
 
@@ -369,12 +430,16 @@
         </div>
         <div class="box2">
             <h2 style="text-align: center; margin-bottom: 20px;">About</h2>
-            <p>Min.Order: 12$</p>
-            <div class="location"></div>
-            <p class="locatio">Azərbaycan, Bakı. Mikayıl Müşfiq küçəsi 14</p>
+            <div class="money"></div>
+            <p style="display: inline-block;">Min.Order: 12$</p>
+            <div class="location"><div class="locatio"></div>
+            <p class="locatiop">Azərbaycan, Bakı. Mikayıl Müşfiq küçəsi 14</p></div>
+            
             <div class="insta">
                 <div class="instalogo"></div>
-               <a href="https://www.instagram.com/_flower.az_/?hl=en"> <p style="position: relative; top:  15px; margin-left: 10px;">_flower.az_</p></a>
+                <a href="https://www.instagram.com/_flower.az_/?hl=en">
+                    <p style="position: relative; top:  15px; margin-left: 10px;">_flower.az_</p>
+                </a>
             </div>
             <div class="teldiv">
                 <div class="tel"></div>
@@ -388,7 +453,7 @@
         <div class="magaza"></div>
         <div class="magaza"></div>
     </div>
-     <div class="magazalar">
+    <div class="magazalar">
         <div class="magaza"></div>
         <div class="magaza"></div>
         <div class="magaza"></div>
