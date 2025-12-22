@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florify.az</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
+
+
+
+
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+
+        }
+
+
+
+
+
+        body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-size: contain;
+
+            background: linear-gradient(ghostwhite, rgb(119, 143, 214));
+
+            background-attachment: fixed;
+
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17px 50px;
+            width: 100%;
+            height: 15%;
+            background-color: thistle;
+
+
+        }
+
+
+        .nav h1 {
+            font-size: 35px;
+            font-weight: 00;
+            position: relative;
+            letter-spacing: 2px;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .nav ul {
+            display: flex;
+        }
+
+        .nav ul li {
+
+            list-style-type: none;
+            text-shadow: rgb(0, 0, 0) 1px 1px 7px;
+            transition: 0.5s ease;
+
+
+        }
+
+        .nav ul li:hover {
+            text-shadow: white 1px 1px 7px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 5px 20px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            color: lavender;
+            transition: color 0.37s ease;
+
+
+
+
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+            color: indigo;
+        }
+
+        ul li #sub {
+            background-image: linear-gradient(90deg, tomato, firebrick, indigo);
+            padding: 10px;
+            ;
+            border-radius: 16px;
+            text-align: center;
+            background-size: 250% auto;
+            text-shadow: none;
+            transition: 0.45s;
+            color: aliceblue;
+
+
+        }
+
+        ul li #sub:hover {
+            background-position: right center;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .magazalar {
+            display: flex;
+
+        }
+
+        .magaza {
+
+            width: 32%;
+            height: 270px;
+            background-color: lavender;
+
+            transition: 0.5s;
+            border-radius: 13px;
+            margin: 1% 2%;
+            background: lavender;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.5s;
+            overflow: hidden;
+
+
+        }
+
+        .magaza:hover {
+            scale: 1.05;
+            box-shadow: 0px 0px 12px;
+        }
+
+
+
+        .magaza4 {
+            border-radius: 13px;
+            background-image: url(guller/Pastel\ rənglərin\ ən\ yumşaq\ ahəngi…\ 💐✨Bənövşəyi\,\ şaftalı\ və\ açıq\ çəhrayı\ çiçəklərin\ birləşməsi\ i.jpg);
+            width: 100%;
+            height: 170px;
+            background-position: 50% 30%;
+            background-size: cover;
+
+
+        }
+
+        button {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            left: 50%;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(36, 33, 29);
+        }
+
+        .register {
+            background-image: url(images/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .setir1 {
+            display: flex;
+        }
+
+        .sign {}
+
+        h1 {
+            text-align: left;
+
+        }
+
+        .logo {
+            background-image: url(guller/7gul.png);
+            height: 300px;
+            width: 22%;
+            border: solid 2px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            margin: 20px 40px;
+            display: inline-block;
+
+
+
+        }
+
+        .watsapp {
+            background-image: url(images/whatsapp.png);
+            width: 65px;
+            height: 65px;
+            ;
+            background-size: cover;
+            transition: 0.3s;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            z-index: 5;
+        }
+
+        .watsapp:hover {
+            width: 90px;
+            height: 90px;
+        }
+
+        .box {
+            display: inline-block;
+            margin: 10px;
+            width: 18%;
+            height: 45vh;
+            background-color: rgba(230, 230, 250, 0.477);
+            background-image: linear-gradient(90deg pink, indigo);
+            border-radius: 16px;
+            z-index: 4;
+            animation: box 1.5s;
+            border: solid 2px;
+
+        }
+
+        @keyframes box {
+
+            0% {
+                opacity: 0;
+                transform: translatey(-100px);
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .box2 {
+
+            margin: 10px;
+            width: 22%;
+            height: 45vh;
+            background-color: rgba(230, 230, 250, 0.477);
+            background-image: linear-gradient(90deg pink, indigo);
+            border-radius: 16px;
+            z-index: 4;
+            animation: box2 1.5s;
+            outline: solid 2px;
+            
+
+
+
+        }
+
+        @keyframes box2 {
+
+            0% {
+                opacity: 0;
+                transform: translatey(-100px);
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+           .box3 {
+
+            margin: 10px;
+            width: 27%;
+            height: 45vh;
+            background-color: rgba(230, 230, 250, 0.477);
+            background-image: linear-gradient(90deg pink, indigo);
+            border-radius: 16px;
+            z-index: 4;
+            animation: box2 1.5s;
+            outline: solid 2px;
+        }
+
+
+        p.workhour {
+            line-height: 33px;
+            text-align: center;
+            animation: workhour 1.5s;
+        }
+
+        @keyframes workhour {
+            0% {
+                opacity: 0;
+                transform: translatey(-100px);
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .locatio {
+            display: inline-block;
+            margin-top: 10px;
+            background-image: url(images/Amitjakhu-Drip-Location.512.png);
+            width: 40px;
+            ;
+            height: 40px;
+            background-size: cover;
+            background-position: center;
+              position: relative;
+            top: 20px;
+            margin-left: 20px;
+        }
+
+        .magazalar {
+            display: flex;
+
+        }
+
+        .magaza {
+
+            width: 32%;
+            height: 270px;
+            background-color: rgb(255, 255, 255);
+
+            transition: 0.5s;
+            border-radius: 13px;
+            margin: 1% 2%;
+
+
+        }
+
+        .hortenziya {
+            background-image: url(guller/Pastel\ rənglərin\ ən\ yumşaq\ ahəngi…\ 💐✨Bənövşəyi\,\ şaftalı\ və\ açıq\ çəhrayı\ çiçəklərin\ birləşməsi\ i.jpg);
+            background-position: 50% 30%;
+
+
+        }
+
+        p.locatiop {
+            display: inline-block;
+            position: relative;
+            top: -15px;  position: relative;
+            top: 20px;
+
+        }
+
+        .insta {
+            margin-top: 15px;
+            display: flex;
+            margin-left: 20px;
+            position: relative;
+            top: 20px;
+
+        }
+
+        .teldiv {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .tel {
+            background-image: url(images/—Pngtree—telephone\ vector\ icon\ and\ logo_23113505.png);
+            width: 45px;
+            background-position: center;
+            background-size: cover;
+
+            height: 45px;
+        }
+
+        .instalogo {
+            background-image: url(images/—Pngtree—instagram\ icon\ vector_8704817.png);
+            width: 40px;
+            background-position: center;
+            background-size: cover;
+
+            height: 40px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+
+        .money {
+            width: 30px;
+            height: 30px;
+            background-image: url(images/Custom-Icon-Design-Flatastic-4-US-dollar.512.png);
+            background-size: cover;
+            background-position: center;
+            display: inline-block;
+
+        }
+
+        p.about {
+            font-weight: 900;
+        }
+
+        .s {
+            width: 100%;
+            height: 225px;
+
+            background-size: cover;
+        }
+         .gerber {
+
+            background-image: url(guller/yeni1.1.png);
+
+            background-position: 50% 50%;
+
+
+
+
+        }
+         .qirmizi {
+
+            background-image: url(guller/yeni2.1.png);
+
+            background-position: 50% 50%;
+
+
+
+
+        }
+
+        .endirimli {
+            color: red;
+            display: inline-block;
+            margin-left: 25px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .qiymet {
+            color: grey;
+            display: inline-block;
+            text-decoration: line-through;
+            margin-left: 19px;
+            font-weight: bolder;
+            font-size: 20px;
+
+        }
+
+        p.flowername {
+            font-weight: 900;
+            margin-left: 10px;
+        }
+
+        p.magazaadi {
+            margin-left: 10px;
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+     .sweet {
+
+            background-image: url(guller/yeni3.1.png);
+
+            background-position: 50% 50%;
+
+
+
+
+        }
+            p.niye {
+            font-size: 20px;
+            font-weight: 800;
+            text-align: center;
+            margin-top: 3px;
+
+        }
+
+        p.sebeb {
+            margin-left: 20px;
+            line-height: 30px;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="nav">
+        <h1> <img src="images/Florify Studios.png" width="80px" style="margin-right: 10px ;" alt=""> Florify</h1>
+        <ul>
+            <li><a href="signin.html">
+                    <div class="register" id="register"></div>
+                </a></li>
+            <li><a style="margin: 0;" class="sign" href="signin.html">log in/ sign in</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shops.html">Shops</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="subscribe.html" id="sub">Subscribe</a></li>
+        </ul>
+    </div>
+
+
+    <div class="setir1">
+        <div class="logo"></div>
+        <div class="box">
+            <h2 style="text-align: center; margin-bottom: 20px;">Work Hours</h2>
+            <p class="workhour">
+                Monday:
+                10:00–24:00 <br>
+                Tuesday:
+                10:00–24:00 <br>
+                Wednesday:
+                10:00–24:00 <br>
+                Thurday:
+                10:00–24:00 <br>
+                Friday:
+                10:00–24:00 <br>
+                Saturday:
+                10:00–22:00 <br>
+                Sunday:
+                10:00–22:00 <br>
+            </p>
+        </div>
+        <div class="box2">
+            <h2 style="text-align: center; margin-bottom: 20px; font-weight: 900;">About</h2>
+            <div class="money"></div>
+            <p style="display: inline-block; font-weight: 600;">Min.Order: 12$</p>
+            <P class="about">
+                <br>
+                ⏱️ Çatdırılma müddəti: 60–120 dəqiqə<br><br>
+                📍 Bakı daxili xidmət <br><br><br><br><br>
+
+                📞 Sifariş və məlumat üçün əlaqə saxlayın
+            </P>
+            <!-- <div class="location"><div class="locatio"></div>
+            <p class="locatiop">Azərbaycan, Bakı. Mikayıl Müşfiq küçəsi 14</p></div> -->
+
+            <!-- <div class="insta">
+                <div class="instalogo"></div>
+                <a href="https://www.instagram.com/_flower.az_/?hl=en">
+                    <p style="position: relative; top:  15px; margin-left: 10px;">_flower.az_</p>
+                </a>
+            </div> -->
+            <div class="teldiv">
+                <div class="tel"></div>
+                <p style="position: relative; top:  15px; margin-left: 10px;">+994554440010</p>
+            </div>
+             
+
+        </div>
+        <div class="box3">
+            <p class="niye">Niyə bizi seçməlisiniz?</p>
+            <p class="sebeb">• 🌸 Günlük təravətli güllər <br>
+                • 🚚 Sürətli və etibarlı çatdırılma <br>
+                • 🎁 Xüsusi günlər üçün fərdi dizayn <br>
+                • 💳 Rahat ödəniş imkanları <br>
+                • ⭐ Müştəri məmnuniyyəti zəmanəti</p>
+
+
+            <div class="location">
+                <div class="locatio"></div>
+                <p class="locatiop">Azərbaycan, Bakı. Mikayıl Müşfiq küçəsi 14</p>
+            </div>
+
+            <div class="insta">
+                <div class="instalogo"></div>
+                <a href="https://www.instagram.com/_flower.az_/?hl=en">
+                    <p style="position: relative; top:  15px; margin-left: 10px;">_flower.az_</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="magazalar">
+        <div class="magaza "><a href="gerber.html">
+                <div class="gerber s"></div>
+            </a> <a href="gerber.html">
+                <p class="flowername">Hortenziya & Xrizantema Qarışıq Buketi </p>
+                <p class="magazaadi">Flower.az</p>
+                <p class="endirimli">200</p>
+                <p class="qiymet">320</p>
+            </a></div>
+        <div class="magaza"><a href="sweet.html">
+                <div class="sweet s"></div>
+            </a>   </a> <a href="sweet.html">
+                <p class="flowername">Hortenziya & Xrizantema Qarışıq Buketi </p>
+                <p class="magazaadi">Flower.az</p>
+                <p class="endirimli">70</p>
+                <p class="qiymet">95</p>
+            </a></div>
+            
+
+        <div class="magaza "><a href="qirmizi.html">
+                <div class="qirmizi s"></div>
+            </a> <a href="qirmizi.html">
+                <p class="flowername">Hortenziya & Xrizantema Qarışıq Buketi </p>
+                <p class="magazaadi">Flower.az</p>
+                <p class="endirimli">200</p>
+                <p class="qiymet">320</p>
+            </a></div>
+    </div>
+    <div class="magazalar">
+        <div class="magaza"></div>
+        <div class="magaza"></div>
+        <div class="magaza"></div>
+    </div>
+
+
+
+
+
+
+
+    <a href="https://wa.me/+994775051080">
+        <div class="watsapp"></div>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
