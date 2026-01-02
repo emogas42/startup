@@ -4,160 +4,415 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8bcbf3e296.js" crossorigin="anonymous"></script>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
 
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: weight;
+
+
+            font-family: "Delius", cursive;
+            font-weight: 400;
             font-style: normal;
 
 
 
 
-
         }
-        
+
         html,
         body {
-         width: 100%;   
-         height: 100%;
-        overflow-x: hidden;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(135deg, #5a3f8c, #6d4ba6);
+            align-items: center;
+            justify-content: center;
         }
+
+
+
+
+
+        body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-size: contain;
+
+            /* background: linear-gradient(to bottom, ghostwhite, skyblue); */
+
+
+            background-attachment: fixed;
+
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17px 50px;
+            width: 100%;
+            height: 15%;
+            background-color: thistle;
+
+
+        }
+
+
+        .nav h1 {
+            font-size: 35px;
+            font-weight: 00;
+            position: relative;
+            letter-spacing: 2px;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .nav ul {
+            display: flex;
+        }
+
+        .nav ul li {
+
+            list-style-type: none;
+            text-shadow: rgb(0, 0, 0) 1px 1px 7px;
+            transition: 0.5s ease;
+
+
+        }
+
+        .nav ul li:hover {
+            text-shadow: white 1px 1px 7px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 5px 20px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            color: lavender;
+            transition: color 0.37s ease;
+
+
+
+
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+            color: indigo;
+        }
+
+        ul li #sub {
+            background-image: linear-gradient(90deg, tomato, firebrick, indigo);
+            padding: 10px;
+            ;
+            border-radius: 16px;
+            text-align: center;
+            background-size: 250% auto;
+            text-shadow: none;
+            transition: 0.45s;
+            color: aliceblue;
+
+
+        }
+
+        ul li #sub:hover {
+            background-position: right center;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .magazalar {
+            display: flex;
+
+        }
+
+        .magaza {
+            margin: 70px;
+            width: 33%;
+            height: 220px;
+            background-color: rgb(255, 255, 255);
+            margin: 7px;
+            transition: 0.5s;
+            border-radius: 13px;
+
+        }
+
+
+
+        .magaza4 {
+            border-radius: 13px;
+            background-image: url(guller/Pastel\ rənglərin\ ən\ yumşaq\ ahəngi…\ 💐✨Bənövşəyi\,\ şaftalı\ və\ açıq\ çəhrayı\ çiçəklərin\ birləşməsi\ i.jpg);
+            width: 100%;
+            height: 170px;
+            background-position: 50% 30%;
+            background-size: cover;
+
+
+        }
+
+        button {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            left: 50%;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(36, 33, 29);
+        }
+
+        .register {
+            background-image: url(images/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .sign {}
+
+        h1 {
+            text-align: left;
+
+        }
+
+        form {
+            width: 30%;
+            height: 65%;
+            background-color: lavender;
+            background: linear-gradient(90deg, lavender, rgb(91, 62, 122), lavender);
+            /* border: solid grey; */
+            margin: auto;
+            margin-top: 5%;
+            border-radius: 30px;
+
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
             
 
-        .img1 {
-            background-position: center;
-            background-size: cover;
-            background-image: url(images/lilac-flower-320874_1920.jpg);
-            width: 30%;
-            height: 100vh;
-
-
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+            color: #fff;
+            padding-top: 2%;
         }
 
-        .img2 {
-            background-image: url(images/verbena-7504222_1920.jpg);
-            width: 40%;
-            height: 100vh;
-            background-position: center;
-            background-size: cover;
-        }
 
-        .img3 {
-            background-image: url(images/tulip-bouquet-1715054_1920.jpg);
-            width: 30%;
-            height: 100vh;
-            background-position: center;
-            background-size: cover;
-        }
 
-        .form {
-            width: 380px;
-            height: 240px;
-            border-radius: 20px;
-            position: absolute;
-            left: 50%;top: 50%;
-            padding: 20px 0px 0px 10px;
-            box-sizing: border-box;
-            overflow: hidden;
-            transform: translate(-50%, -50%);
-            backdrop-filter: blur(16px);
-        }
-
-        h6 {
-            margin: 3px;
-        }
+        
 
         input {
-            margin: 1.7px;
-        }
 
-        img {
-            position: absolute;
-            left: 44.5%;
-            top: 0;
-            width: 12%;
-            border-radius: 50%;
-
-        }
-
-        input.submit {
+            border: solid 1px grey;
+            border: none;
+            border-radius: 10px;
+            width: 35%;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);          
+            height: 5%;
+            scale: 2;
             position: relative;
-            left: 39%;
-            top: 50%;
-            width: 60px;
-            height: 23px;
-            background-color: rgb(88, 200, 88);
-            border: 1px solid;
-            border-radius: 4px;
+
+            left: 34%;
+            margin-top: 11%;
+            padding: 2%;
+            
+            background-color: thistle;
+            ;
 
         }
 
-        h3 {
-            margin: 2px;
-            color: rgb(111, 3, 128);
+        p.Createp {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 50px;
+            margin: 0;
+            margin-top: 0px;
+            position: relative;
+            left: 22%;
+            /* font-weight: 900; */
+
         }
-        .container{
-            display: flex;
-           
+
+        .submit {
+
+            border: solid 1px grey;
+            border-radius: 9px;
+            width: 30%;
+            height: 7%;
+            scale: 2;
+            border: none;
+            position: relative;
+            top: 10%;
+            left: 37%;
+            font-family: Arial, Helvetica, sans-serif;
+
+            padding: 2%;
+            margin: 0;
+            box-shadow: 0px 0px 10px 10px 4px;
+            background-color: lightpink;
+            background: linear-gradient(135deg, #ffd1dc, #ffb6c1);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .submit:hover{
+            opacity: 0.84;
+        }
+
+
+        input.checkbox {
+
+            scale: 0.4;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 3%;
+            box-shadow: none;
+            top: 5%;
+        }
+
+        p.remember {
+            position: relative;
+            left: 24%;
+            margin-bottom: 10px;
+        }
+
+        p.forget {
+            color: white;
+            position: relative;
+            left: 57%;
+            bottom: 5.5%;
+        }
+
+        i {
+            position: relative;
+            left: 40%;
+        }
+
+        p.account {
+            position: relative;
+            left: 20%;
+            top: 15%;
+        }
+
+        a.accounta {
+            color: blue;
+            text-decoration: underline;
+            position: relative;
+            left: 60%;
+            top: 11%;
+        }
+
+        /* .logo{
+            background-image: url(images/Florify_FS_tight_transparent-removebg-preview.png);
+            width: 250px;
+            height: 250px;
+            background-size: cover;
+            filter: drop-shadow( 10px 10px 10px rgb(91, 62, 122));
+
+            z-index: 3;
+
+        } */
+        .circle {
+
+            background-position: center;
+            background-color: rgba(91, 62, 122);
+            filter: blur(60px);
+            background-size: cover;
+            box-shadow: 0 0 5px rgba(91, 62, 122, 0.8),
+                0 0 25px rgba(91, 62, 122, 0.7),
+                0 0 50px rgba(91, 62, 122, 0.8),
+                0 0 100px rgba(91, 62, 122, 0.5),
+                0 0 200px rgba(91, 62, 122, 0.5);
+
+            position: relative;
+            top: 6%;
+            left: 40%;
+
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="img1"></div>
-        <div class="img2"></div>
-        <div class="img3"></div>
+
+
+
+
+    <div class="nav">
+        <h1> <img src="images/Florify Studios.png" width="80px" style="margin-right: 10px ;" alt=""> Florify</h1>
+        <ul>
+            <li><a href="signin.html">
+                    <div class="register" id="register"></div>
+                </a></li>
+            <li><a style="margin: 0;" class="sign" href="signin.html">log in/ sign in</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shops.html">Shops</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="subscribe.html" id="sub">Subscribe</a></li>
+        </ul>
     </div>
 
-    <div class="form">
-        <form action="succes.html">
-            <h3>Create New Account</h3>
-            <label for="email">Email:</label>
-            <input type="email" required name="" id="">
-            <br>
-            <label for="us">Username:</label>
-            <input type="text" name="" id="us">
-            <br>
-            <label for="pw">Password:</label>
-            <input type="password" name="" id="pw">
-            <br>
-            <label for="cpw">Confirm Password:</label>
-            <input type="password" name="" id="cpw">
-            <br>
-            <label for="phn">Phone Number:</label>
-            <select name="" id="">
-                <option value="">+1</option>
-                <option value="">+10</option>
-                <option value="">+7</option>
-                <option value="">+41</option>
-                <option value="">+156</option>
-                <option value="">+994</option>
-            </select>
-            <input type="tel" name="" id="">
+
+    <form action="index.html">
+        <div class="circle">
+
+            <div class="logo"></div>
+        </div>
+
+
+        <p class="Createp">Create Account</p>
+        <input type="text" name="" id="" placeholder="Username"><i class="fa-solid fa-user"></i>
+        <br>
+        
+        <input type="email" name="" id="" required placeholder="Email">
+        <i class="fa-solid fa-envelope"></i>
+
+        <div class="inputpassword">
+
+        </div>
+
+        <input type="password" name="" id="" required placeholder="Password"> <i class="fa-solid fa-lock"></i><br>
+        <input type="checkbox" name="" id="" class="checkbox">
+        <p class="remember">I agree to the terms & conditions</p>
+        <input type="submit" value="Register" class="submit">
+
+        <p class="account">Already hava an account?</p><a href="signin.html" class="accounta">Login</a>
+    </form>
+    <!-- <img src="images/Florify_FS_tight_transparent-removebg-preview.png"  style="position: absolute; top: 0px; left: -50px; filter: opacity(0.5); z-index: -1;" width="1100px"> -->
+    <!-- <img src="images/Florify_FS_tight_transparent-removebg-preview.png"  style="position: absolute; top: -90px;left: 350px;filter: opacity(0.5); z-index: -1;" width="1000px"> -->
+
+
+    <i></i>
+
+
+
+
+
+    <h1></h1>
 
 
 
 
 
 
-            <br>
-            <input type="submit" class="submit">
 
-        </form>
 
-    </div>
-    <img src="images/Florify Studios.png" width="123px" alt="">
+
+
+
 
 </body>
 
