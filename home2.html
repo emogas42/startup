@@ -7,19 +7,18 @@
     <title>Florify.az</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
 
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: weight;
-            font-style: normal;
 
+
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
 
 
 
@@ -43,7 +42,7 @@
             position: relative;
             background-size: contain;
 
-            background: linear-gradient(to bottom, ghostwhite, skyblue);
+            background: linear-gradient(to bottom, ghostwhite, rgb(237, 186, 223));
 
             background-attachment: fixed;
 
@@ -64,12 +63,23 @@
 
 
         .nav h1 {
+            position: relative;
+            right: 24%;
+            margin-left: 40px;
             font-size: 35px;
-            font-weight: 00;
+            font-weight: 900;
             position: relative;
             letter-spacing: 2px;
             color: rgb(255, 255, 255);
 
+        }
+          .florifylogo{
+            width: 7%;height: 125%;
+            background-image: url(images/Florify\ Studios.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            
         }
 
         .nav ul {
@@ -137,7 +147,7 @@
         .magaza {
 
             width: 32%;
-            height: 270px;
+            height: 285px;
             background-color: lavender;
 
             transition: 0.5s;
@@ -148,13 +158,14 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             transition: 0.5s;
             overflow: hidden;
+            
 
 
         }
 
         .magaza:hover {
-            scale: 1.05;
-            box-shadow: 0px 0px 12px;
+            scale: 1.01;
+            box-shadow: 0px 0px 15px thistle;
         }
 
         .s {
@@ -206,13 +217,14 @@
 
         }
 
-        p.flowername {
+        p.flowername{
+            margin-left: 10px;
+            margin-top: 7px;
             font-weight: 900;
-            margin-left: 10px;
         }
-
-        p.magazaadi {
+        p.magazaadi{
             margin-left: 10px;
+
             display: inline-block;
         }
 
@@ -223,6 +235,9 @@
             position: relative;
             left: 50%;
             margin-bottom: 10px;
+            background-color: lavender;
+            border: none;
+            border-radius: 20px ;
 
         }
 
@@ -245,8 +260,8 @@
 
         .watsapp {
             background-image: url(images/whatsapp.png);
-            width: 65px;
-            height: 65px;
+            width: 55px;
+            height: 55px;
             background-position: center;
 
 
@@ -347,6 +362,7 @@
             align-items: center;
             margin: auto;
             padding-top: 20px;
+            height: 40%;
         }
 
         .company {
@@ -453,12 +469,15 @@
         .elaqe h4,
         .komanda h4 {
             margin-bottom: 10px;
+            font-weight: 900;
+            font-size: 26px;
         }
 
         .footerlist span {
             font-weight: 600;
             color: #323131;
             margin-right: 15px;
+            line-height: 40px;
         }
 
         .komanda span {
@@ -495,6 +514,21 @@
             color: rgba(0, 0, 0, 0.8);
             text-decoration: none;
         }
+           h1.home{
+            text-align: center;
+            color: darkmagenta;
+            font-weight: 900
+            ;
+                
+        }
+        hr{
+            border: none;
+            background-color: black;
+            height: .1px;
+        }
+        li.insta{
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -504,8 +538,8 @@
 
 
     <div class="nav">
-        <h1> <img src="images/Florify Studios.png" width="40px" style="margin-right: 10px ;" alt="">Florify
-        </h1>
+        <div class="florifylogo"></div>
+        <h1>Florify</h1>
         <ul>
             <li><a href="signin.html">
                     <div class="register" id="register"></div>
@@ -519,7 +553,7 @@
 
 
 
-    <h1>Home</h1>
+    <h1 class="home">Home</h1>
 
 
 
@@ -531,10 +565,10 @@
             </a>
 
             <a href="sebet.html">
-                <h4>Roza Kompazisiyasi</h4>
-                <p class="magazaadi">Flower.az</p>
-                <p class="endirimli">200</p>
-                <p class="qiymet">320</p>
+                <p class="flowername">Roza Kompazisiyasi</p>
+                <a href="floweraz.html"><p class="magazaadi">Flower.az</p></a>
+                <p class="endirimli">200₼</p>
+                <p class="qiymet">320₼</p>
             </a>
         </div>
         <div class="magaza">
@@ -542,10 +576,10 @@
                 <div class="gelinbk s"></div>
             </a>
             <a href="hortenziya.html">
-                <h4>Hortenziya & Xrizantema Qarışıq Buketi</h4>
-                <p class="magazaadi">Flower.az</p>
-                <p class="endirimli">200</p>
-                <p class="qiymet">320</p>
+                <p class="flowername">Hortenziya & Xrizantema Qarışıq Buketi</p>
+                <a href="floweraz.html"><p class="magazaadi">Flower.az</p></a>
+                <p class="endirimli">200₼</p>
+                <p class="qiymet">320₼</p>
             </a>
 
         </div>
@@ -555,10 +589,10 @@
 
             </a>
             <a href="harmoniya.html">
-                <h4>Qış Harmoni̇yası”-Premium Yeni İl Buketi</h4>
-                <p class="magazaadi">Flower.az</p>
-                <p class="endirimli">200</p>
-                <p class="qiymet">320</p>
+                <p class="flowername">Qış Harmoni̇yası”-Premium Yeni İl Buketi<p4>
+                <a href="floweraz.html"><p class="magazaadi">Flower.az</p></a>
+                <p class="endirimli">200₼</p>
+                <p class="qiymet">320₼</p>
             </a>
         </div>
     </div>
@@ -568,10 +602,10 @@
                 <div class="gerber s"></div>
             </a>
             <a href="gerber.html">
-                <h4> Roza yeni il buketi</h4>
-                <p class="magazaadi">Flower.az</p>
-                <p class="endirimli">200</p>
-                <p class="qiymet">320</p>
+                <p class="flowername"> Roza yeni il buketi</h4>
+        p<a href="floweraz.html"><p class="magazaadi">Flower.az</p></a>
+                <p class="endirimli">200₼</p>
+                <p class="qiymet">320₼</p>
             </a>
 
         </div>
@@ -580,14 +614,13 @@
                 <div class="qirmizi s"></div>
             </a>
             <a href="qirmizi.html">
-                <h4>qeyri adi üslublu
-                    kompozisiya
+                <p class="flowername">qeyri adi üslublu
+                    kopozisiya
                 </h4>
-                <p class="magazaadi">Flower.az</p>
-                <p class="endirimli">200</p>
-                <p class="qiymet">320</p>
+                <a href="floweraz.html"><p class="magazaadi">Flower.az</p></a>
+                <p class="endirimli">200₼</p>
+                <p class="qiymet">320₼</p>
             </a>
-
         </div>
         <div class="magaza">
             <a href="sweet.html">
@@ -595,10 +628,10 @@
             </a>
             <a href="sweet.html">
                 <div>
-                    <h4>dekorativ cicek kompozisiyası</h4>
-                    <p class="magazaadi">Flower.az</p>
-                    <p class="endirimli">200</p>
-                    <p class="qiymet">320</p>
+                    <p class="flowername">dekorativ cicek kompozisiyası</h4>
+p             <a href="floweraz.html"><p class="magazaadi">Flower.az</p></a>
+                    <p class="endirimli">200₼</p>
+                    <p class="qiymet">320₼</p>
                 </div>
             </a>
 
@@ -611,10 +644,10 @@
             </a>
             <a href="zerif.html">
                 <div>
-                    <h4>Qortenziya & Xrizantema</h4>
-                    <p class="magazaadi">Flower.az</p>
-                    <p class="endirimli">200</p>
-                    <p class="qiymet">320</p>
+                    <p class="flowername">Qortenziya & Xrizantema</h4>
+        p       <a href="floweraz.html"><p class="magazaadi">Flower.az</p></a>
+                    <p class="endirimli">200₼</p>
+                    <p class="qiymet">320₼</p>
                 </div>
             </a>
 
@@ -625,10 +658,10 @@
             </a>
             <a href="elegance.html">
                 <div>
-                    <h4>Roza Kompozisiyası</h4>
-                    <p class="magazaadi">Flower.az</p>
-                    <p class="endirimli">200</p>
-                    <p class="qiymet">320</p>
+                    <p class="flowername">Roza Kompozisiyası</h4>
+            p  <a href="floweraz.html"><p class="magazaadi">Flower.az</p></a>
+                    <p class="endirimli">200₼</p>
+                    <p class="qiymet">320₼</p>
                 </div>
             </a>
 
@@ -637,14 +670,16 @@
             <a href="gardengul.html">
                 <div class="garden s"></div>
             </a>
-            <a href="gardengul.html">
+               <a href="roza007.html">
                 <div>
-                    <h4>Roza Sebeti</h4>
-                    <p class="magazaadi">Flower.az</p>
-                    <p class="endirimli">200</p>
-                    <p class="qiymet">320</p>
+                    <p class="flowername">Roza 007</h4>
+              <a href="floweraz.html"><p class="magazaadi">Flower.az</p></a>
+                    <p class="endirimli">200₼</p>
+                    <p class="qiymet">320₼</p>
                 </div>
             </a>
+              
+            
 
         </div>
     </div>
@@ -672,11 +707,12 @@
         </div>
         <div class="elaqe">
             <h4>Əlaqə</h4>
+            <hr>
             <ul class="footerlist">
                 <li><span>Telefon:</span>0775051080</li>
-                <li><span>Email:</span>florify.support@gmail.com</li>
+                <li> <span>Email:</span>florify.support@gmail.com</li>
                 <li style="line-height: 20px;"><span>Ünvan:</span>Azərbaycan / Bakı şəhəri / Xətai rayonu / ASPA</li>
-                <li>
+                <li class="insta">
                     <div class="instagram"></div> <span style="position: relative; bottom: 10px;">@florify.az</span>
                 </li>
             </ul>
@@ -684,6 +720,7 @@
         </div>
         <div class="komanda">
             <h4>Komanda</h4>
+            <hr>
             <ul class="footerlist">
                 <li><span>Baş dizayner: </span> Elməddin</li>
                 <li><span>Florist:</span>Cavid</li>
