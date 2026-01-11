@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/8bcbf3e296.js" crossorigin="anonymous"></script>
+
     <style>
         * {
             margin: 0;
@@ -50,6 +52,8 @@
         }
 
         .nav {
+            z-index: 7;
+            position: fixed;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -366,7 +370,7 @@
         }
 
         .company {
-            margin: 17px;
+            
             display: inline-block;
             background: rgba(255, 255, 255, 0);
             /* border: 1px solid rgba(0, 0, 0, 0.08); */
@@ -375,7 +379,7 @@
             height: 220px;
             padding: 16px 16px 14px;
             /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); */
-            margin-left: 18%;
+            margin-left: 4%;
         }
 
         .komanda {
@@ -394,18 +398,41 @@
 
         }
 
-        .elaqe {
+        .haqqinda {
             background: rgba(255, 255, 255, 0);
             /* border: 1px solid rgba(0, 0, 0, 0.08); */
             border-radius: 16px;
             margin: 17px;
 
-            width: 340px;
+            width: 480px;
             height: 220px;
             padding: 16px 25px 14px;
             /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); */
 
         }
+        .kecidler{
+                  display: inline-block;
+            background: rgba(255, 255, 255, 0);
+            /* border: 1px solid rgba(0, 0, 0, 0.08); */
+
+            border-radius: 16px;
+            width: 180px;
+            margin: 17px;
+
+            height: 220px;
+            padding: 16px 16px 14px;
+            /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); */
+
+
+        }
+        ul.kecidlerlist{
+            list-style: none;
+            line-height: 40px;
+            font-size: 17px;
+            cursor:pointer;
+            
+        }
+
 
         .logo {
             width: 60px;
@@ -466,8 +493,8 @@
             line-height: 30px;
         }
 
-        .elaqe h4,
-        .komanda h4 {
+        .haqqinda h4,
+        .komanda h4 ,.kecidler h4{
             margin-bottom: 10px;
             font-weight: 900;
             font-size: 26px;
@@ -480,9 +507,10 @@
             line-height: 40px;
         }
 
-        .komanda span {
+        .kecidler span, .komanda span {
             margin-right: 6px;
         }
+       
 
         .instagram {
             display: inline-block;
@@ -519,6 +547,8 @@
             color: darkmagenta;
             font-weight: 900
             ;
+            position: relative;
+            top: 120px;
                 
         }
         hr{
@@ -528,6 +558,11 @@
         }
         li.insta{
             margin-top: 10px;
+        }
+        i{
+            scale: 1.6;
+            margin: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -553,12 +588,12 @@
 
 
 
-    <h1 class="home">Home</h1>
+    <h1 class="home" >Home</h1>
 
 
 
 
-    <div class="magazalar">
+    <div class="magazalar" style="margin-top: 130px;">
         <div class="magaza">
             <a href="sebet.html">
                 <div class="sebet s"></div>
@@ -596,7 +631,7 @@
             </a>
         </div>
     </div>
-    <div class="magazalar">
+    <div class="magazalar" >
         <div class="magaza">
             <a href="gerber.html">
                 <div class="gerber s"></div>
@@ -705,15 +740,15 @@ p             <a href="floweraz.html"><p class="magazaadi">Flower.az</p></a>
             </div>
 
         </div>
-        <div class="elaqe">
-            <h4>Əlaqə</h4>
+        <div class="haqqinda">
+            <h4>Haqqında</h4>
             <hr>
             <ul class="footerlist">
                 <li><span>Telefon:</span>0775051080</li>
                 <li> <span>Email:</span>florify.support@gmail.com</li>
                 <li style="line-height: 20px;"><span>Ünvan:</span>Azərbaycan / Bakı şəhəri / Xətai rayonu / ASPA</li>
                 <li class="insta">
-                    <div class="instagram"></div> <span style="position: relative; bottom: 10px;">@florify.az</span>
+                   <i class="fa-brands fa-instagram"></i>  </i><i class="fa-brands fa-tiktok"></i><i class="fa-brands fa-x-twitter"></i>
                 </li>
             </ul>
 
@@ -721,11 +756,18 @@ p             <a href="floweraz.html"><p class="magazaadi">Flower.az</p></a>
         <div class="komanda">
             <h4>Komanda</h4>
             <hr>
-            <ul class="footerlist">
-                <li><span>Baş dizayner: </span> Elməddin</li>
-                <li><span>Florist:</span>Cavid</li>
-                <li><span>Sifariş & Logistika:</span>Elcan</li>
+           
+        </div>
+        <div class="kecidler">
+            <h4>Keçidlər</h4>
+            <hr>
+            <ul class="kecidlerlist">
+                <li>Ana səhifə</li>
+                <li>Mağazalar</li>
+                <li>Buketlər</li>
+                <li>xüsusi günlər</li>
             </ul>
+           
         </div>
 
     </div>
