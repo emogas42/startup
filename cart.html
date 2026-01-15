@@ -37,14 +37,14 @@
 
 
 
-        body{
+        body {
             width: 100%;
             height: 100%;
             position: relative;
             background-size: contain;
-            
-            background: linear-gradient(to bottom ,ghostwhite, rgb(119, 143, 214)) ;
-            
+
+            background: linear-gradient(to bottom, ghostwhite, rgb(119, 143, 214));
+
             background-attachment: fixed;
 
 
@@ -169,22 +169,197 @@
             text-decoration: none;
             color: rgb(36, 33, 29);
         }
-        .register{
+
+        .register {
             background-image: url(images/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
             width: 24px;
             height: 24px;
             display: inline-block;
             margin: 0;
             padding: 0;
-            
+
         }
-        .sign{
-            
-        }
-        h1{
+
+        .sign {}
+
+        h1 {
             text-align: left;
+
+        }
+
+        .kart1 {
+            background-image: url();
+            height: 50%;
+            width: 38%;
+            background-color: palevioletred;
+            position: relative;
+            top: 100px;
+            left: 55px;
+            border-radius: 5%;
+            margin: auto;
+
+            
+
+
+
+
+
+        }
+
+        #fullname {
+            width: 400px;
+            height: 30px;
+            margin-left: 20px;
+
+        }
+
+        #reqem {
+            width: 400px;
+
+
+        }
+
+        #ay {
+            width: 200px;
+
+        }
+
+        #cvv {
+            width: 70px;
+            height: 30px;
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+
+        }
+
+        #qutu {
+            display: block;
+        }
+
+        input.fullname {
+            position: relative;
+            top: 40px;
+            margin-top: 80px;
+            display: block;
+            width: 500px;
+            border-radius: 20px;
+            border: none;
+            height: 40px;
+            margin: 3px;
+            margin-left: 10%;
+            
             
         }
+        input.reqem{
+            position: relative;
+            top: 40px;
+            margin-top: 20px;
+            display: block;
+            width: 500px;
+            border-radius: 20px;
+            border: none;
+            height: 40px;
+            margin: 3px;
+            margin-left: 10%;
+            margin-top:5% ;
+
+        }
+
+        input.cvv {
+            position: relative;
+            top: 40px;
+            width: 50px;
+             margin-top: 20px;
+            display: block;
+            border-radius: 20px;
+            border: none;
+            height: 40px;
+            margin: 3px;
+            margin-left: 10%;
+            margin-top:12% ;
+            margin-left: 80%;
+        }
+        input.ay{
+            position: relative;
+            top: 40px;
+            margin-top: 20px;
+            display: block;
+            width: 470px;
+            border-radius: 20px;
+            border: none;
+            height: 40px;
+            margin: 3px;
+            margin-left: 20%;
+            margin-top:10% ;
+
+
+        }
+        .alt{
+            display: flex;
+            width: 50%;
+
+        }
+
+        .qutu { width: 200px;
+            border-radius: 20px;
+            border: none;
+            height: 40px;
+            margin: 3px;
+            margin-left: 34%;
+            
+
+        }
+        .mastercard{
+            height: 50px;
+            width: 70px;
+            margin-top: 20px;
+            position: relative;
+            margin-left: 20px;
+            background-image: url(guller/master.png);
+            background-position: center;
+            background-size: cover;
+        }
+        .visakart{
+            height: 50px;
+            width: 90px;
+            margin-top: -50px;
+            position: relative;
+            margin-left: 140px;
+            background-image: url(guller/visa.png);
+            background-position: center;
+            background-size: cover;
+
+        }
+        .odenis{
+            position: relative;
+            background-color: black;
+            color: white;
+            font: size 15px;
+            cursor: pointer;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 5px;
+            font-size: 20px;
+            
+            
+            display: block;
+            width: 200px;
+            border-radius: 20px;
+            border: none;
+            height: 40px;
+            margin: 3px;
+            margin-left: 36%;
+            margin-top:10% ;
+
+
+        }
+        
+        
+
+
     </style>
 </head>
 
@@ -193,20 +368,30 @@
 
 
 
-    <div class="nav">
-       <h1 > <img src="images/Florify Studios.png" width="80px" style="margin-right: 10px ;" alt=""> Florify</h1>
-        <ul>
-            <li><a href="signin.html"><div class="register" id="register"></div></a></li>
-            <li><a style="margin: 0;" class="sign" href="signin.html">log in/ sign in</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shops.html">Shops</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="subscribe.html" id="sub">Subscribe</a></li>
-        </ul>
+    <div class="kart1">
+
+
+        <form class="name">
+            <h5 class="cardname"></h5>
+
+            <input class="fullname " placeholder="Enter your full name">
+            <h5 class="ad"></h5>
+            <input class="reqem " placeholder="0000 0000 0000 0000">
+            <div class="alt">
+                <input class="ay " placeholder="00/00">
+                <input class="cvv " placeholder="cvv">
+            </div>
+            <div class=odenis>Make Payment</div>
+            <div class="mastercard"></div>
+            <div class="visakart"></div>
+            
+
+
+
+        </form>
     </div>
-    
-    
+
+
 
 
 
