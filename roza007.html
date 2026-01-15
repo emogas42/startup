@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roza</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> <script src="https://kit.fontawesome.com/8bcbf3e296.js" crossorigin="anonymous"></script>
+
+
     <style>
         * {
 
@@ -17,9 +19,6 @@
             font-optical-sizing: auto;
             font-weight: weight;
             font-style: normal;
-
-
-
 
 
         }
@@ -37,7 +36,7 @@
             background-image: url(guller/roza1.png);
             width: 40%;
             margin-left: 40px;
-            margin-top: 30px;
+            margin-top: 130px;
             height: 600px;
             background-position: center;
             background-size: cover;
@@ -46,7 +45,7 @@
         }
 
         .gradient nav {
-            position: relative;
+            position: fixed;
 
             display: flex;
             justify-content: space-between;
@@ -60,6 +59,8 @@
         }
 
         nav h1 {
+            position: fixed;
+            right: 24%;
             margin-left: 40px;
             font-size: 35px;
             font-weight: 00;
@@ -67,6 +68,14 @@
             letter-spacing: 2px;
             color: rgb(255, 255, 255);
 
+        }
+          .florifylogo{
+            width: 7%;height: 95%;
+            background-image: url(images/Florify\ Studios.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin-left: 20px;
         }
 
         nav ul {
@@ -179,6 +188,27 @@
             left: 50%;
 
         }
+        a{
+            text-decoration: none;
+        }
+        .sebet{
+            height: 40px;
+            padding: 10px;
+            box-sizing: border-box;
+
+            background-color: lavender;
+            border: thistle solid ;
+            border-radius: 10px;
+            position: relative;
+            left: 50%;
+            top: 20%;
+            color: purple;
+            font-weight: 600;
+            
+        }
+        i{
+            color: black;
+        }
 
         .logo {
             width: 120px;
@@ -241,8 +271,8 @@
 <body>
     <div class="gradient">
         <nav>
-            <h1> <img src="images/Florify Studios.png" width="40px" style="margin-right: 10px ;" alt="">Florify
-            </h1>
+            <div class="florifylogo"></div>
+                <h1>Florify</h1>
             <ul>
                 <li><a href="signin.html">
                         <div class="register" id="register"></div>
@@ -264,7 +294,8 @@
             <h2 id="q70">60₼</h2>
             <h2 id="q95">99₼
             </h2>
-            <button>Purchase</button>
+                        <a href="satis.html"><div class="sebet"><i class="fa-solid fa-cart-shopping"></i> Səbətə at</div></a>
+
         </div>
         <div class="tesvir">
             <h2>🌸 Təsvir</h2>

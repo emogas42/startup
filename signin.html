@@ -30,7 +30,7 @@
         body {
             height: 100%;
             width: 100%;
-            background: linear-gradient(135deg, #5a3f8c, #6d4ba6);
+                background: linear-gradient(135deg, #5a3f8c, #6d4ba6);
             align-items: center;
             justify-content: center;
         }
@@ -66,13 +66,24 @@
         }
 
 
-        .nav h1 {
+         .nav h1 {
+            position: relative;
+            right: 24%;
+            margin-left: 40px;
             font-size: 35px;
-            font-weight: 00;
+            font-weight: 900;
             position: relative;
             letter-spacing: 2px;
             color: rgb(255, 255, 255);
 
+        }
+          .florifylogo{
+            width: 7%;height: 125%;
+            background-image: url(images/Florify\ Studios.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            
         }
 
         .nav ul {
@@ -228,7 +239,7 @@
             margin-top: 11%;
             padding: 2%;
             background-color: thistle;
-            ;
+            
 
         }
 
@@ -341,14 +352,10 @@
         }
     </style>
 </head>
-
 <body>
-
-
-
-
     <div class="nav">
-        <h1> <img src="images/Florify Studios.png" width="80px" style="margin-right: 10px ;" alt=""> Florify</h1>
+       <div class="florifylogo"></div>
+       <h1>Florify</h1>
         <ul>
             <li><a href="signin.html">
                     <div class="register" id="register"></div>
@@ -359,36 +366,28 @@
                         <li><a href="subscribe.html" id="sub">Subscribe</a></li>
         </ul>
     </div>
-
-
     <form action="index.html">
         <div class="circle">
-
             <div class="logo"></div>
         </div>
-
         <p class="loginp">Log In</p>
         <input type="email" name="" id="" required placeholder="Email">
         <i class="fa-solid fa-user"></i>
-
         <div class="inputpassword">
-
         </div>
-
         <input type="password" name="" id="" required placeholder="Password"> <i class="fa-solid fa-lock"></i><br>
         <input type="checkbox" name="" id="" class="checkbox">
         <p class="remember">Remember me</p><a href="">
             <p class="forget">Forget your password?</p>
         </a>
         <input type="submit" value="Log In" class="submit">
-
         <p class="account">Don't have an account?</p><a href="createaccount.html" class="accounta">Register!</a>
     </form>
     <!-- <img src="images/Florify_FS_tight_transparent-removebg-preview.png"  style="position: absolute; top: 0px; left: -50px; filter: opacity(0.5); z-index: -1;" width="1100px"> -->
     <!-- <img src="images/Florify_FS_tight_transparent-removebg-preview.png"  style="position: absolute; top: -90px;left: 350px;filter: opacity(0.5); z-index: -1;" width="1000px"> -->
 
 
-    <i></i>
+
 
 
 
