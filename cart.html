@@ -191,9 +191,9 @@
 
         .kart1 {
             background-image: url();
-            height: 50%;
-            width: 38%;
-            background-color: palevioletred;
+            height: 45%;
+            width: 33%;
+            background-color: rgb(230, 207, 215);
             position: relative;
             top: 100px;
             left: 55px;
@@ -208,48 +208,27 @@
 
         }
 
-        #fullname {
-            width: 400px;
-            height: 30px;
-            margin-left: 20px;
 
-        }
-
-        #reqem {
-            width: 400px;
-
-
-        }
-
-        #ay {
-            width: 200px;
-
-        }
-
-        #cvv {
-            width: 70px;
-            height: 30px;
-            position: absolute;
-            right: 10px;
-            bottom: 5px;
-
-        }
 
         #qutu {
             display: block;
         }
 
+        input{
+                        padding: 20px;
+
+        }
         input.fullname {
             position: relative;
             top: 40px;
             margin-top: 80px;
             display: block;
-            width: 500px;
+            width: 300px;
             border-radius: 20px;
             border: none;
             height: 40px;
             margin: 3px;
-            margin-left: 10%;
+            margin-left: 21%;
             
             
         }
@@ -258,12 +237,12 @@
             top: 40px;
             margin-top: 20px;
             display: block;
-            width: 500px;
+            width: 300px;
             border-radius: 20px;
             border: none;
             height: 40px;
             margin: 3px;
-            margin-left: 10%;
+            margin-left: 21%;
             margin-top:5% ;
 
         }
@@ -271,7 +250,7 @@
         input.cvv {
             position: relative;
             top: 40px;
-            width: 50px;
+            width: 80px;
              margin-top: 20px;
             display: block;
             border-radius: 20px;
@@ -280,19 +259,19 @@
             margin: 3px;
             margin-left: 10%;
             margin-top:12% ;
-            margin-left: 80%;
+            margin-left: 35%;
         }
         input.ay{
             position: relative;
             top: 40px;
             margin-top: 20px;
             display: block;
-            width: 470px;
+            width: 100px;
             border-radius: 20px;
             border: none;
             height: 40px;
             margin: 3px;
-            margin-left: 20%;
+            margin-left: 46%;
             margin-top:10% ;
 
 
@@ -313,8 +292,8 @@
 
         }
         .mastercard{
-            height: 50px;
-            width: 70px;
+            height: 32px;
+            width: 40px;
             margin-top: 20px;
             position: relative;
             margin-left: 20px;
@@ -323,11 +302,12 @@
             background-size: cover;
         }
         .visakart{
-            height: 50px;
-            width: 90px;
-            margin-top: -50px;
+            height: 20px;
+            width: 40px;
+            margin-top: -26px;
+            border-radius: 3px;
             position: relative;
-            margin-left: 140px;
+            margin-left: 90px;
             background-image: url(guller/visa.png);
             background-position: center;
             background-size: cover;
@@ -335,7 +315,7 @@
         }
         .odenis{
             position: relative;
-            background-color: black;
+            background-color: rgb(148, 16, 115);
             color: white;
             font: size 15px;
             cursor: pointer;
@@ -343,12 +323,13 @@
             align-items: center;
             justify-content: center;
             display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 5px;
             font-size: 20px;
             
             
             display: block;
-            width: 200px;
+            width: 180px;
             border-radius: 20px;
             border: none;
             height: 40px;
@@ -378,9 +359,9 @@
 
             <input class="fullname " placeholder="Enter your full name">
             <h5 class="ad"></h5>
-            <input class="reqem " placeholder="0000 0000 0000 0000">
+            <input class="reqem " type="" placeholder="0000 0000 0000 0000">
             <div class="alt">
-                <input class="ay " placeholder="00/00">
+                <input class="ay " type="date" placeholder="00/00">
                 <input class="cvv " placeholder="cvv">
             </div>
             <div class=odenis>Make Payment</div>

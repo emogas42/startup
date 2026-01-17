@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8bcbf3e296.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+
+
+
+
+
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+
+        }
+
+
+
+
+
+        body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-size: contain;
+
+            background: linear-gradient(to bottom, ghostwhite, rgb(237, 186, 223));
+
+            background-attachment: fixed;
+
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17px 50px;
+            width: 100%;
+            height: 15%;
+            background-color: thistle;
+
+
+        }
+
+
+        .nav h1 {
+            font-size: 35px;
+            font-weight: 00;
+            position: relative;
+            letter-spacing: 2px;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .nav ul {
+            display: flex;
+        }
+
+        .nav ul li {
+
+            list-style-type: none;
+            text-shadow: rgb(0, 0, 0) 1px 1px 7px;
+            transition: 0.5s ease;
+
+
+        }
+
+        .nav ul li:hover {
+            text-shadow: white 1px 1px 7px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 5px 20px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            color: lavender;
+            transition: color 0.37s ease;
+
+
+
+
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+            color: indigo;
+        }
+
+        ul li #sub {
+            background-image: linear-gradient(90deg, tomato, firebrick, indigo);
+            padding: 10px;
+            ;
+            border-radius: 16px;
+            text-align: center;
+            background-size: 250% auto;
+            text-shadow: none;
+            transition: 0.45s;
+            color: aliceblue;
+
+
+        }
+
+        ul li #sub:hover {
+            background-position: right center;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .magazalar {
+            display: flex;
+
+        }
+
+        .magaza {
+            margin: 70px;
+            width: 33%;
+            height: 220px;
+            background-color: rgb(255, 255, 255);
+            margin: 7px;
+            transition: 0.5s;
+            border-radius: 13px;
+
+        }
+
+
+
+        .magaza4 {
+            border-radius: 13px;
+            background-image: url(guller/Pastel\ rənglərin\ ən\ yumşaq\ ahəngi…\ 💐✨Bənövşəyi\,\ şaftalı\ və\ açıq\ çəhrayı\ çiçəklərin\ birləşməsi\ i.jpg);
+            width: 100%;
+            height: 170px;
+            background-position: 50% 30%;
+            background-size: cover;
+
+
+        }
+
+        button {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            left: 50%;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(36, 33, 29);
+        }
+
+        .register {
+            background-image: url(images/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .sign {}
+
+        .container {
+            width: 100%;
+            height: 100%;
+            padding-top: 8%;
+
+
+
+        }
+
+        .card {
+            width: 32%;
+            height: 80%;
+            background-color: white;
+            margin: auto;
+            border-radius: 20px;
+
+        }
+
+        .ust {
+            display: flex;
+            height: 150px;
+            width: 100%;
+            padding: 30px 60px;
+
+
+        }
+
+        .paypal {
+            cursor: pointer;
+            width: 100px;
+            border-radius: 10px;
+            height: 60px;
+            background-color: rgb(224, 223, 223);
+
+            padding: 8px 0px;
+            margin: 10px;
+            /* margin-left: 40px; */
+        }
+
+        .paypalsekil {
+            width: 100px;
+            height: 40px;
+            background-image: url(pay\ pal.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+
+        }
+
+        .gpay {
+            cursor: pointer;
+
+            width: 100px;
+            border-radius: 10px;
+            height: 60px;
+            background-color: rgb(224, 223, 223);
+
+            padding: 10px 17px;
+            margin: 10px;
+        }
+
+        .gpaysekil {
+            width: 60px;
+            background-image: url(google-pay.png);
+            height: 40px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        .apay {
+            cursor: pointer;
+
+            margin: 10px;
+            width: 100px;
+            border-radius: 10px;
+            height: 60px;
+            padding: 10px 16px;
+            background-color: rgb(224, 223, 223);
+
+        }
+
+        .apaysekil {
+            width: 60px;
+            background-image: url(apple-pay.png);
+            height: 40px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        .xett {
+            width: 90%;
+            height: 0.5px;
+            background-color: rgb(202, 202, 202);
+            margin: auto;
+            position: relative;
+            top: -10px;
+        }
+
+        input.name {
+            display: block;
+            height: 35px;
+            width: 55%;
+            padding: 0px 20px;
+            margin-left: 23%;
+
+
+
+        }
+
+        input.cardnumber {
+            display: block;
+            padding: 0px 20px;
+            margin-left: 23%;
+            height: 35px;
+            width: 55%;
+        }
+
+        input {
+
+            margin: 10px;
+            border: none;
+            background-color: rgb(235, 234, 232);
+            border-radius: 10px;
+
+        }
+
+        input.ay {
+            height: 40px;
+            width: 120px;
+            padding: 0px 20px;
+
+            margin-left: 23%;
+        }
+
+        input.cvv {
+            height: 40px;
+            width: 130px;
+            padding: 0px 20px;
+        }
+
+        input.submit {
+            height: 34px;
+            width: 55%;
+            display: block;
+            margin-left: 23%;
+            margin-top: 10%;
+            color: white;
+            background: linear-gradient(rgb(138, 134, 134), rgb(0, 0, 0));
+
+        }
+
+        .back {
+margin-top: 4%;            border: none;
+            background-color: rgb(235, 234, 232);
+            border-radius: 10px;
+            width: 65px;
+            height: 35px;
+            margin-left: 10%;
+            font-size: 14px;
+            padding: 6px ;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="ust">
+                <div class="paypal">
+                    <div class="paypalsekil"></div>
+                </div>
+
+                <div class="gpay">
+                    <div class="gpaysekil"></div>
+                </div>
+                <div class="apay">
+                    <div class="apaysekil"></div>
+                </div>
+            </div>
+            <div class="xett"></div>
+            <p style="margin-left: 49%;">or</p>
+            <div class="alt">
+                <form action="succes.html">
+                    <input type="text" class="name" placeholder="Enter full name" name="" id="">
+                    <input type="text" class="cardnumber" name="" placeholder="Enter card number" required id="">
+                    <input type="text" class="ay" name="" id="" placeholder="mm/yy">
+                    <input type="text" class="cvv" name="" id="" placeholder="cvv">
+                    <input type="submit" class="submit" value="Pay">
+                </form>
+            </div>
+            <a href="index.html"><div class="back"> < Back</div></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
